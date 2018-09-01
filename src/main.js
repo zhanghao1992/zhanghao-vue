@@ -1,7 +1,10 @@
 import Vue from "vue";
 import App from "./App.vue";
-import router from "./router";
-import store from "./store";
+import router from "./router/index";
+import store from "./store/index";
+import axios from "./axios/index";
+import VueAxios from "vue-axios";
+Vue.use(VueAxios, axios);
 
 Vue.config.productionTip = false;
 
